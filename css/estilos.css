@@ -1,11 +1,44 @@
 * {
     color: black;
 }
-img {
-    max-width: 10rem;
-    max-height: 10rem;
-    border-radius: 25%;
+
+.imagen {
+    display: flex;
+    justify-content: center;
 }
+img {
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 50%;
+}
+
 aside {
     background-color: #4d7aa1;
+}
+body {
+    display: grid;
+    grid-template: 1 fr / 1fr 5 fr;
+    font-size: 2.5vh;
+}
+aside {
+    grid-column: 1 / span 1;
+    padding: 1rem;
+}
+main {
+    grid-column: 2 / span 5;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contacto__lista {
+    font-size: 1rem;
+    margin: 0rem;
+    padding: .5rem;
+}
+
+.contacto__lista li {
+    padding: .3rem;
 }
